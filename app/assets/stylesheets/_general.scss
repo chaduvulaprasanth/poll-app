@@ -1,0 +1,86 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.space-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.only-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.block {
+  display: block;
+}
+.position-center-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.btn {
+  padding: 0.5rem 0.7rem;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+.padding-top-.5rem {
+  padding-top: 0.5rem;
+}
+.selected-item-bg {
+  background: #1164a3;
+  &:hover {
+    background: #1164a3;
+  }
+}
+.selected-item-white-color {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+.margin-left-5rem {
+  margin-left: 5rem;
+}
+.margin-top-1rem {
+  margin-top: 1rem;
+}
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+.margin-right-1rem {
+  margin-right: 1rem;
+}
+.margin-left-.3rem {
+  margin-left: 0.3rem;
+}
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+.fs-2 {
+  font-size: 2rem;
+}
+.curs {
+  cursor: pointer;
+}

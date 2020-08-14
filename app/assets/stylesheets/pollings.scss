@@ -1,0 +1,51 @@
+.no-polls {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  font-size: 2rem;
+  color: black;
+  letter-spacing: 0.06rem;
+  font-weight: 500;
+}
+.poll-cont {
+  margin: 2.5rem 0;
+}
+.ques {
+  font-size: 1.2rem;
+}
+.options-cont {
+  color: black;
+  letter-spacing: 0.06rem;
+  font-weight: 500;
+  margin: 1rem;
+  display: flex;
+  position: relative;
+}
+.option-count {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: lightblue;
+  padding: 0.5rem;
+}
+.option-t-count {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #e6375a;
+  color: white;
+  padding: 0.5rem;
+}
+.option-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  position: absolute;
+  left: 8%;
+}
+
+.option-name-normal {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}

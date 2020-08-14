@@ -1,0 +1,29 @@
+.nav-bar {
+  padding: 1rem 0;
+}
+.logo {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  a {
+    color: black;
+  }
+}
+.nav-item {
+  list-style: none;
+  margin-left: 1rem;
+  padding: 0.7rem;
+  letter-spacing: 0.04rem;
+  font-size: 1rem;
+  font-size: 700;
+  color: black;
+}
+.selected-nav-item {
+  background: #3eb991;
+  color: white;
+  border-radius: 5px;
+}
+.warn {
+  background-color: #e6375a;
+}
