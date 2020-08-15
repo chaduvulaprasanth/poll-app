@@ -9,16 +9,15 @@ class Index extends React.Component {
       "POST"
     )
       .then((response) => {
-        console.log(response.notice);
         window.location.href = "/";
       })
       .catch((error) => {
-        console.log(error.notice);
+        alert(error.notice);
+        window.location.href = "/";
       });
   };
   render() {
     let { pollings } = this.props;
-    console.log(this.props.pollings);
     if (pollings.length <= 0) {
       return <p className="no-polls">No Polls to vote</p>;
     } else {

@@ -39,7 +39,6 @@ class Create extends React.Component {
     };
     API.postNewTask(payload, "/pollings", "POST")
       .then((response) => {
-        console.log(response.notice);
         window.location.href = "/";
       })
       .catch((error) => {
@@ -69,7 +68,7 @@ class Create extends React.Component {
               onChange={this.handleChange}
             />
             {[1, 2, 3, 4].map((optv) => (
-              <>
+              <div key={optv}>
                 <label className="block label-heading">Poll Options</label>
                 <input
                   className="block portal-input"
@@ -79,7 +78,7 @@ class Create extends React.Component {
                   value={polling.option1.name}
                   onChange={this.handleChange}
                 />
-              </>
+              </div>
             ))}
             <input
               className={`portal-btn margin-top-1rem fs-1`}

@@ -4,17 +4,16 @@ import API from "../utils/API";
 class Header extends React.Component {
   handleLogout = () => {
     API.postNewTask("", "/logout", "DELETE").then((response) => {
-      console.log(response.notice);
       window.location.href = "/";
     });
   };
 
-  privateRoutes = () => {
+  privateRoutes = (current_user) => {
     return (
       <>
         <div className="flex">
           <li className="nav-item selected-nav-item warn curs">
-            You can only see the result of the polls you voted
+            {`Hi ${current_user.name}, you can only see the result of the polls you voted`}
           </li>
         </div>
         <div className="flex">
@@ -57,7 +56,7 @@ class Header extends React.Component {
           <li className="logo">
             <a href="/">Polls</a>
           </li>
-          {logged_in ? this.privateRoutes() : this.publicRoutes()}
+          {logged_in ? this.privateRoutes(current_user) : this.publicRoutes()}
         </nav>
       </header>
     );
