@@ -12,7 +12,7 @@ class Header extends React.Component {
     return (
       <>
         <div className="flex">
-          <li className="nav-item selected-nav-item warn curs">
+          <li className="nav-item selected-nav-item info curs">
             {`Hi ${current_user.name}, you can only see the result of the polls you voted`}
           </li>
         </div>
