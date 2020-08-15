@@ -49,26 +49,29 @@ class Index extends React.Component {
                             <p className="option-name">{option.name}</p>
                           </div>
                         ))}
-                        <p className="option-t-count">{`Total ${total_votes} vote${
-                          total_votes == 1 ? "" : "s"
-                        }`}</p>
+                        <p className="option-t-count">{`You voted : Total votes -  ${total_votes}`}</p>
                       </>
                     ) : (
-                      options.map((option) => (
-                        <div
-                          className="options-cont"
-                          key={option.id}
-                          onClick={
-                            current_user.id
-                              ? () => this.handleSubmit(option.id, polling.id)
-                              : ""
-                          }
-                        >
-                          <p className="option-name-normal curs">
-                            {option.name}
-                          </p>
-                        </div>
-                      ))
+                      <>
+                        {options.map((option) => (
+                          <div
+                            className="options-cont"
+                            key={option.id}
+                            onClick={
+                              current_user.id
+                                ? () => this.handleSubmit(option.id, polling.id)
+                                : ""
+                            }
+                          >
+                            <p className="option-name-normal curs">
+                              {option.name}
+                            </p>
+                          </div>
+                        ))}
+                        <p className="option-t-count">
+                          click on above options to vote
+                        </p>
+                      </>
                     )}
                   </div>
                 ) : (

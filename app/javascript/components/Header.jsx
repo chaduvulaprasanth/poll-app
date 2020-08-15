@@ -52,10 +52,10 @@ class Header extends React.Component {
     let { current_user, logged_in } = this.props;
     return (
       <header className="container">
-        <nav className="nav-bar space-flex">
-          <li className="logo">
-            <a href="/">Polls</a>
-          </li>
+        <nav className="nav-bar  space-flex">
+          <a href="/" className="logo selected-nav-item">
+            <li>Polls</li>
+          </a>
           {logged_in ? this.privateRoutes(current_user) : this.publicRoutes()}
         </nav>
       </header>
