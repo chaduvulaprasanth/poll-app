@@ -3,29 +3,24 @@
 }
 .logo {
   list-style: none;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: bold;
   letter-spacing: 0.06rem;
   padding: 0.7rem;
+  border-radius: 3px;
 }
 .nav-item {
   list-style: none;
   margin-left: 1rem;
+  color: black;
   padding: 0.7rem;
+  outline: none;
   letter-spacing: 0.06rem;
   font-size: 1rem;
-  font-weight: 700;
-  color: black;
+  cursor: pointer;
+  border-radius: 3px;
 }
 .selected-nav-item {
-  background: #00ffa4;
-  color: black;
-  border-radius: 5px;
-}
-.warn {
-  background-color: #e6375a;
-}
-.info {
   background: #00ffa4;
   color: black;
 }

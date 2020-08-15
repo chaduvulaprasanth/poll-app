@@ -75,11 +75,15 @@ class Index extends React.Component {
                     )}
                   </div>
                 ) : (
-                  options.map((option) => (
-                    <div className="options-cont" key={option.id}>
-                      <p className="option-name-normal curs">{option.name}</p>
-                    </div>
-                  ))
+                  <>
+                    {options.map((option) => (
+                      <div className="options-cont" key={option.id}>
+                        <a href="/login" className="option-name-normal">
+                          {option.name}
+                        </a>
+                      </div>
+                    ))}
+                  </>
                 )}
               </div>
             )

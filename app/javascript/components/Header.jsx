@@ -12,16 +12,16 @@ class Header extends React.Component {
     return (
       <>
         <div className="flex">
-          <li className="nav-item selected-nav-item info curs">
+          <li className="nav-item selected-nav-item">
             {`Hi ${current_user.name}, you can only see the result of the polls you voted`}
           </li>
         </div>
         <div className="flex">
           <a href="/pollings/new" className="nav-item selected-nav-item">
-            <li>Create Poll</li>
+            <li>CREATE POLL</li>
           </a>
           <li className="nav-item curs" onClick={this.handleLogout}>
-            Logout
+            LOGOUT
           </li>
         </div>
       </>
@@ -32,16 +32,16 @@ class Header extends React.Component {
     return (
       <>
         <div className="flex">
-          <li className="nav-item selected-nav-item warn curs">
+          <li className="nav-item selected-nav-item">
             Please login/signup to vote a poll
           </li>
         </div>
         <div className="flex">
           <a href="/signup" className="nav-item selected-nav-item">
-            <li>Sign up</li>
+            <li>SIGNUP</li>
           </a>
           <a href="/login" className="nav-item">
-            <li>Login</li>
+            <li>LOGIN</li>
           </a>
         </div>
       </>
@@ -54,7 +54,7 @@ class Header extends React.Component {
       <header className="container">
         <nav className="nav-bar  space-flex">
           <a href="/" className="logo selected-nav-item">
-            <li>Polls</li>
+            <li>POLLS</li>
           </a>
           {logged_in ? this.privateRoutes(current_user) : this.publicRoutes()}
         </nav>
