@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Poll app - Backend Rails & Frontend React.
+- It has the following features -
+  - one can signup/login using email and create a poll
+  - each poll should have 4 options
+  - Anyone can see all the polls listed on homepage
+  - To vote in a poll, user needs to signup. One user can only vote on one option of a poll.
+  - When one has voted in a poll, user should be able to see the total votes, and breakup for each poll option.
